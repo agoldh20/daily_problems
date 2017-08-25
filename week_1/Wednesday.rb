@@ -11,7 +11,7 @@ class String
 
 end
 
-text = String.new({string: "Hello world"})
+text = String.new({string: "Racecar"})
 
 p text.string
 text.reverse_a_string
