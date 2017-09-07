@@ -6,6 +6,7 @@ items = [
   {title: "DDD_Aggregate", words: 482, tags: ["nosql", "ddd"], type: :book}
 ]
 
-items.map do |book|
-  p book.select{|word_count| word_count[:words.to_i].reduce(:+)}
-end
+# word_count = []
+new_items = items.map { |item| item[:words] }.reduce(:+)
+
+p new_items
