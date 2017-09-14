@@ -6,16 +6,5 @@ people = [
   {name: "alice", age: 56, gender: "female"},
   {name: "adam", age: 15, gender: "male"}
 ]
-
-def sort
-  sorted = people.sort do |a,b| 
-  if a[:age] == nil
-    -1
-  elsif b[:age] == nil
-     1
-  else
-    a[:age] <=> b[:age]
-  end
-end
-p sorted
-end
+people_1 = people.sort { |name, age| name[:name] <=> age[:name] }
+puts people_1.sort { |name, age| name[:age] <=> age[:age] }

@@ -4,4 +4,4 @@ people = [
   {"name" => "Danilo", "age" => 45}
 ]
 
-p people.sort { |a, b| a["age"] <=> b["age"]  }
+p people.sort { |name, age| name["age"] <=> age["age"]  }
